@@ -35,13 +35,34 @@
     <!--
     <link rel="canonical" href="http://www.example.com/">
     -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
   </head>
   <body>
-    <!-- Add your site or app content here -->
 
-    <!-- build:js scripts/main.min.js -->
-    <script src="scripts/main.js"></script>
-    <!-- endbuild -->
+    <input type='button' value='Add' id='startBtn'>
+
+    <textarea class="textbox" id="Brief"></textarea>
+
+
+
+    <script>
+        console.log("Testing")
+
+        var cardRules = new Array();
+        var index = 0;
+
+        $.get('/guessword/app/categories/lotr.txt', function(data){
+            cardRules = data.split('\n');
+            console.log(cardRules)
+            document.getElementById('Brief').value = cardRules[0]
+        })
+
+        $("#startBtn").click(function(){
+            console.log("onClick")
+            $('#Brief').prop('value', cardRules[++index%3]);
+        });
+
+    </script>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
     <script>
