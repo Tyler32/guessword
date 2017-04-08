@@ -1,0 +1,99 @@
+﻿Integer
+Duff's Device
+Bubble Sort
+Quick Sort
+Vertex Shader
+Pixel Shader
+Algorithm
+Function
+Variable
+Recursion
+Register
+RAM
+CPU
+Memory
+Bus
+Object Oriented Programming
+Allocate
+Increment
+Decrement
+Assembly
+Domain
+Serialization
+Buffer
+Z-Order
+Z-Buffer
+W-Buffer
+Matrix
+Vector
+Projection
+Axis-Aligned Bounding Box
+Octree
+Binary Space Partitioning
+Occlusion
+Ambient
+Diffuse
+Specular
+Dot Product
+Cross Product
+Inverse
+Rotation
+Quaternion
+Linear Interpolation
+Slerp
+Squad
+Spline
+Garbage Collection
+Stack
+Queue
+Hash Table
+Linked List
+Compression
+Reflection
+Ambient Occlusion
+Inheritance
+Interface
+Abstract
+Abstract Base Class
+Virtualization
+Database
+JPEG
+Mutex
+Semaphore
+Texture
+Model
+Animation
+Maya
+3D Studio Max
+Lua
+Python
+C++
+C#
+C
+Big O Notation
+Logarithm
+Binary Search
+Constant
+Memory Mapped
+Mounted Drive
+Symbolic Link
+Debugging Symbols
+Executable
+Compiler
+Architecture
+NVidia
+Operating System
+Virus
+Keyboard
+Mouse
+Failover Cluster
+Logic Gate
+Motherboard
+Loop Unrolling
+Assembler
+TCP/IP
+UDP
+Registry
+Global Variable
+Scope
+Tokenize
