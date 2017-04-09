@@ -110,7 +110,7 @@
         <p class="guesswordtext" id="wordToGuessText">GuessWord</p>
 
         <div class="startGameBtn">
-            <input type='button' value='Start Game' id='theBtnToRuleThemAll'>
+            <input type='button' value='Start' id='theBtnToRuleThemAll'>
         </div>
     </div>
 
@@ -122,7 +122,15 @@
         var team1Score = 0;
         var team2Score = 0;
 
+        var beepIntervalId;
+        var roundIntervalId;
+        var roundTime = 4500;
+
         var guessWordsIndex = 0;
+
+        var beepAudio = new Audio("sounds/beep.mp3");
+        var endRoundAudio = new Audio("sounds/end.mp3");
+        var endGameAudio = new Audio("sounds/endgame.wav");
 
         //loadWords(['/categories/lotr.txt']);
         //loadWords(['http://localhost:63342/guessword/app/categories/lotr.txt', 'http://localhost:63342/guessword/app/categories/HarryPotter.txt']);
@@ -157,6 +165,11 @@
                 $('#wordToGuessText').prop('innerHTML', guessWords[guessWordsIndex++ % guessWords.length]);
             }
             else {
+                //Round length 45-60 seconds
+                beepIntervalId = setInterval(function() { beepAudio.play(); }, 1000);
+
+                roundIntervalId = setInterval(endRound, roundTime);
+
                 $('#theBtnToRuleThemAll').val('Next');
                 $('#wordToGuessText').prop('innerHTML', guessWords[guessWordsIndex++ % guessWords.length]);
             }
@@ -167,7 +180,7 @@
             console.log("team1BtnClick")
             var btnText = $('#theBtnToRuleThemAll').val();
 
-            if(btnText == 'Next') {
+            if(btnText == 'Next Round') {
                 $('#team1Score').prop('innerHTML', "Team 1: " + ++team1Score);
                 checkScores();
             }
@@ -177,11 +190,19 @@
             console.log("team2BtnClick")
             var btnText = $('#theBtnToRuleThemAll').val();
 
-            if(btnText == 'Next') {
+            if(btnText == 'Next Round') {
                 $('#team2Score').prop('innerHTML', "Team 2: " + ++team2Score);
                 checkScores();
             }
         });
+
+        function endRound() {
+            clearInterval(roundIntervalId);
+            clearInterval(beepIntervalId);
+            endRoundAudio.play();
+
+            $('#theBtnToRuleThemAll').val('Next Round');
+        }
 
         function checkScores() {
             var gameOver = false;
@@ -196,7 +217,8 @@
             }
 
             if(gameOver == true) {
-                $('#theBtnToRuleThemAll').val('Start Game');
+               endGameAudio.play();
+                $('#theBtnToRuleThemAll').val('Start');
                 team1Score = 0;
                 team2Score = 0;
             }
