@@ -31,36 +31,195 @@
     <!-- Color the status bar on mobile devices -->
     <meta name="theme-color" content="#2F3BA2">
 
+      <link rel="stylesheet" href="/guessword/app/styles/main.css">
+
+      <style>
+
+          #top,
+          #middle,
+          #bottom {
+              position: fixed;
+              left: 0;
+              right: 0;
+              height: 33%;
+          }
+
+          #top {
+              top: 0;
+              background-color: orange;
+          }
+
+          #middle {
+              top: 33%;
+              background-color: brown;
+          }
+
+          #bottom {
+              bottom: 0;
+              background-color: green;
+          }
+
+          .toprightcorner{
+              position:fixed;
+              top:10px;
+              right:10px;
+          }
+
+          .team-1-text{
+          }
+
+          .team-1-Btn{
+          }
+
+          .guesswordtext {
+              text-align:center;
+          }
+
+          .startGameBtn {
+              text-align:center;
+          }
+
+
+
+      </style>
+
     <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
     <!--
     <link rel="canonical" href="http://www.example.com/">
     -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+
   </head>
   <body>
 
-    <input type='button' value='Add' id='startBtn'>
+    <div id="top">
+        <p class="team-1-text" id="team1Score">Team 1: 0</p>
 
-    <textarea class="textbox" id="Brief"></textarea>
+        <div class="team-1-Btn">
+            <input type='button' value='Add' id='team1Btn'>
+        </div>
 
+        <p class="toprightcorner" id="team2Score">Team 2: 0</p>
 
+        <div style="float: right;">
+            <input type='button' value='Add' id='team2Btn'>
+        </div>
+    </div>
+
+    <div id="middle">
+        <p class="guesswordtext" id="wordToGuessText">GuessWord</p>
+
+        <div class="startGameBtn">
+            <input type='button' value='Start Game' id='theBtnToRuleThemAll'>
+        </div>
+    </div>
+
+    <div id="bottom">
+    </div>
 
     <script>
-        console.log("Testing")
+        var guessWords = [];
+        var team1Score = 0;
+        var team2Score = 0;
 
-        var cardRules = new Array();
-        var index = 0;
+        var guessWordsIndex = 0;
 
-        $.get('/guessword/app/categories/lotr.txt', function(data){
-            cardRules = data.split('\n');
-            console.log(cardRules)
-            document.getElementById('Brief').value = cardRules[0]
-        })
+        //loadWords(['/categories/lotr.txt']);
+        //loadWords(['http://localhost:63342/guessword/app/categories/lotr.txt', 'http://localhost:63342/guessword/app/categories/HarryPotter.txt']);
+        loadWords(['http://localhost:63342/guessword/app/categories/lotr.txt', 'http://localhost:63342/guessword/app/categories/DigiPen.txt']);
 
-        $("#startBtn").click(function(){
-            console.log("onClick")
-            $('#Brief').prop('value', cardRules[++index%3]);
+        function loadWords($files) {
+
+            $.each($files, function( index, value ) {
+                console.log(value);
+                $.ajax({
+                    url : value,
+                    type : "get",
+                    async: false,
+                    success : function(data) {
+                        var words = data.split('\n');
+                        guessWords = $.merge(words, guessWords);
+                        console.log(guessWords);
+                    }
+                });
+            });
+
+            guessWords = shuffle(guessWords);
+            console.log(guessWords);
+            guessWordsIndex = 0;
+        };
+
+        $("#theBtnToRuleThemAll").click(function(){
+            console.log($('#theBtnToRuleThemAll').val())
+            var btnText = $('#theBtnToRuleThemAll').val();
+
+            if(btnText == 'Next') {
+                $('#wordToGuessText').prop('innerHTML', guessWords[guessWordsIndex++ % guessWords.length]);
+            }
+            else {
+                $('#theBtnToRuleThemAll').val('Next');
+                $('#wordToGuessText').prop('innerHTML', guessWords[guessWordsIndex++ % guessWords.length]);
+            }
+
         });
+
+        $("#team1Btn").click(function(){
+            console.log("team1BtnClick")
+            var btnText = $('#theBtnToRuleThemAll').val();
+
+            if(btnText == 'Next') {
+                $('#team1Score').prop('innerHTML', "Team 1: " + ++team1Score);
+                checkScores();
+            }
+        });
+
+        $("#team2Btn").click(function(){
+            console.log("team2BtnClick")
+            var btnText = $('#theBtnToRuleThemAll').val();
+
+            if(btnText == 'Next') {
+                $('#team2Score').prop('innerHTML', "Team 2: " + ++team2Score);
+                checkScores();
+            }
+        });
+
+        function checkScores() {
+            var gameOver = false;
+            if(team1Score >= 7) {
+                gameOver = true;
+                $('#wordToGuessText').prop('innerHTML', "Team 1 Wins!");
+
+            }
+            else if(team2Score >= 7) {
+                gameOver = true;
+                $('#wordToGuessText').prop('innerHTML', "Team 2 Wins!");
+            }
+
+            if(gameOver == true) {
+                $('#theBtnToRuleThemAll').val('Start Game');
+                team1Score = 0;
+                team2Score = 0;
+            }
+        }
+
+        function shuffle(array) {
+            var currentIndex = array.length, temporaryValue, randomIndex;
+
+            // While there remain elements to shuffle...
+            while (0 !== currentIndex) {
+
+                // Pick a remaining element...
+                randomIndex = Math.floor(Math.random() * currentIndex);
+                currentIndex -= 1;
+
+                // And swap it with the current element.
+                temporaryValue = array[currentIndex];
+                array[currentIndex] = array[randomIndex];
+                array[randomIndex] = temporaryValue;
+            }
+
+            return array;
+        }
 
     </script>
 
