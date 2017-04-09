@@ -124,6 +124,8 @@
 
         var beepIntervalId;
         var roundIntervalId;
+        var midRoundIntervalId;
+        var tenseIntervalId;
         var roundTime = 4500;
 
         var guessWordsIndex = 0;
@@ -132,7 +134,7 @@
         var endRoundAudio = new Audio("sounds/end.mp3");
         var endGameAudio = new Audio("sounds/endgame.wav");
 
-        //loadWords(['/categories/lotr.txt']);
+        //loadWords(['/categories/lotr.txt', '/categories/DigiPen.txt']);
         //loadWords(['http://localhost:63342/guessword/app/categories/lotr.txt', 'http://localhost:63342/guessword/app/categories/HarryPotter.txt']);
         loadWords(['http://localhost:63342/guessword/app/categories/lotr.txt', 'http://localhost:63342/guessword/app/categories/DigiPen.txt']);
 
@@ -165,8 +167,22 @@
                 $('#wordToGuessText').prop('innerHTML', guessWords[guessWordsIndex++ % guessWords.length]);
             }
             else {
-                //Round length 45-60 seconds
-                beepIntervalId = setInterval(function() { beepAudio.play(); }, 1000);
+                //Round length 45-55 seconds
+                roundTime = 45000 + Math.random() * 10000;
+                beepIntervalId = setInterval(function() { beepAudio.play(); }, 1400);
+                midRoundIntervalId = setInterval(function() {
+                    clearInterval(midRoundIntervalId);
+                    clearInterval(beepIntervalId);
+                    beepAudio.play();
+                    beepIntervalId = setInterval(function() { beepAudio.play(); }, 700);
+                }, roundTime *.60);
+
+                tenseIntervalId = setInterval(function() {
+                    clearInterval(tenseIntervalId);
+                    clearInterval(beepIntervalId);
+                    beepAudio.play();
+                    beepIntervalId = setInterval(function() { beepAudio.play(); }, 500);
+                }, roundTime *.82);
 
                 roundIntervalId = setInterval(endRound, roundTime);
 
@@ -197,9 +213,9 @@
         });
 
         function endRound() {
+            endRoundAudio.play();
             clearInterval(roundIntervalId);
             clearInterval(beepIntervalId);
-            endRoundAudio.play();
 
             $('#theBtnToRuleThemAll').val('Next Round');
         }
