@@ -31,6 +31,19 @@
     <!-- Color the status bar on mobile devices -->
     <meta name="theme-color" content="#2F3BA2">
 
+      <!-- Include meta tag to ensure proper rendering and touch zooming -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <!-- Include jQuery Mobile stylesheets -->
+      <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
+      <!-- Include the jQuery library -->
+      <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+      <!-- Include the jQuery Mobile library -->
+      <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+
       <link rel="stylesheet" href="/guessword/app/styles/main.css">
 
       <style>
@@ -41,22 +54,22 @@
               position: fixed;
               left: 0;
               right: 0;
-              height: 33%;
           }
 
           #top {
               top: 0;
-              background-color: orange;
+              height: 25%;
           }
 
           #middle {
-              top: 33%;
-              background-color: brown;
+              top: 25%;
+              height: 25%;
           }
 
-          #bottom {
+          #bottom{
               bottom: 0;
-              background-color: green;
+              overflow: auto;
+              height: 50%;
           }
 
           .toprightcorner{
@@ -66,9 +79,27 @@
           }
 
           .team-1-text{
+              position:fixed;
+              top:10px;
+              left:10px;
           }
 
           .team-1-Btn{
+              position:fixed;
+              top:40px;
+              left:10px;
+          }
+
+          .team-2-text {
+              position:fixed;
+              top:10px;
+              right:10px;
+          }
+
+          .team-2-Btn {
+              position:fixed;
+              top:40px;
+              right:10px;
           }
 
           .guesswordtext {
@@ -96,13 +127,13 @@
         <p class="team-1-text" id="team1Score">Team 1: 0</p>
 
         <div class="team-1-Btn">
-            <input type='button' value='Add' id='team1Btn'>
+            <a data-role="button" data-inline="true" onclick="team1BtnClick();" data-theme="b" id='team1Btn'>Add</a>
         </div>
 
-        <p class="toprightcorner" id="team2Score">Team 2: 0</p>
+        <p class="team-2-text" id="team2Score">Team 2: 0</p>
 
-        <div style="float: right;">
-            <input type='button' value='Add' id='team2Btn'>
+        <div class="team-2-Btn">
+            <a data-role="button" data-inline="true" onclick="team2BtnClick();" data-theme="b" id='team2Btn'>Add</a>
         </div>
     </div>
 
@@ -110,11 +141,31 @@
         <p class="guesswordtext" id="wordToGuessText">GuessWord</p>
 
         <div class="startGameBtn">
-            <input type='button' value='Start' id='theBtnToRuleThemAll'>
+            <a data-role="button" data-inline="true" onclick="theBtnToRuleThemAllClick();" data-theme="b" id='theBtnToRuleThemAll'>Start</a>
         </div>
     </div>
 
     <div id="bottom">
+
+        <form id="categoriesForm">
+            <fieldset data-role="controlgroup">
+                <legend>Categories:</legend>
+                <input type="checkbox" name="checkbox-v-2a" id="checkbox-v-2a">
+                <label for="checkbox-v-2a">lotr</label>
+                <input type="checkbox" name="checkbox-v-2b" id="checkbox-v-2b">
+                <label for="checkbox-v-2b">DigiPen</label>
+                <input type="checkbox" name="checkbox-v-2c" id="checkbox-v-2c">
+                <label for="checkbox-v-2c">HarryPotter</label>
+                <input type="checkbox" name="checkbox-v-2d" id="checkbox-v-2d">
+                <label for="checkbox-v-2d">Characters</label>
+                <input type="checkbox" name="checkbox-v-2e" id="checkbox-v-2e">
+                <label for="checkbox-v-2e">College Sports</label>
+                <input type="checkbox" name="checkbox-v-2f" id="checkbox-v-2f">
+                <label for="checkbox-v-2f">Final Fantasy</label>
+                <input type="checkbox" name="checkbox-v-2g" id="checkbox-v-2g">
+                <label for="checkbox-v-2g">LordOfTheRings</label>
+            </fieldset>
+        </form>
     </div>
 
     <script>
@@ -136,11 +187,34 @@
 
         //loadWords(['/categories/lotr.txt', '/categories/DigiPen.txt']);
         //loadWords(['http://localhost:63342/guessword/app/categories/lotr.txt', 'http://localhost:63342/guessword/app/categories/HarryPotter.txt']);
-        loadWords(['http://localhost:63342/guessword/app/categories/lotr.txt', 'http://localhost:63342/guessword/app/categories/DigiPen.txt']);
+        //loadWords();//['http://localhost:63342/guessword/app/categories/lotr.txt', 'http://localhost:63342/guessword/app/categories/DigiPen.txt']);
 
-        function loadWords($files) {
+        //$.ajax({
+        //    url: "http://localhost:63342/guessword/app/categories/",
+        //    success: function(data){
+        //        $(data).each(function(){
+        //            // will loop through
+        //            console.log("Found a file: " + $(this).attr("href"));
+        //        });
+        //    }
+        //});
 
-            $.each($files, function( index, value ) {
+        function loadWords() {
+            //var filePath = '/categories/';
+            //var filePath = 'http://ternsts.com.s3-website-us-west-2.amazonaws.com/categories/';
+            var filePath = "http://localhost:63342/guessword/app/categories/";
+            var files = [];
+
+            $('input[type=checkbox]').each(function () {
+                if (this.checked) {
+                    var file = filePath + $(this).prev('label').text() + ".txt";
+                    console.log(file);
+                    files.push(file);
+                }
+            });
+
+
+            $.each(files, function( index, value ) {
                 console.log(value);
                 $.ajax({
                     url : value,
@@ -159,14 +233,16 @@
             guessWordsIndex = 0;
         };
 
-        $("#theBtnToRuleThemAll").click(function(){
-            console.log($('#theBtnToRuleThemAll').val())
-            var btnText = $('#theBtnToRuleThemAll').val();
+        function theBtnToRuleThemAllClick(){
+            console.log($('#theBtnToRuleThemAll').text());
+            var btnText = $('#theBtnToRuleThemAll').text();
 
             if(btnText == 'Next') {
                 $('#wordToGuessText').prop('innerHTML', guessWords[guessWordsIndex++ % guessWords.length]);
             }
             else {
+                loadWords();
+
                 //Round length 45-55 seconds
                 roundTime = 45000 + Math.random() * 10000;
                 beepIntervalId = setInterval(function() { beepAudio.play(); }, 1400);
@@ -186,38 +262,38 @@
 
                 roundIntervalId = setInterval(endRound, roundTime);
 
-                $('#theBtnToRuleThemAll').val('Next');
+                $('#theBtnToRuleThemAll').text("Next");
                 $('#wordToGuessText').prop('innerHTML', guessWords[guessWordsIndex++ % guessWords.length]);
             }
 
-        });
+        };
 
-        $("#team1Btn").click(function(){
+        function team1BtnClick(){
             console.log("team1BtnClick")
-            var btnText = $('#theBtnToRuleThemAll').val();
+            var btnText = $('#theBtnToRuleThemAll').text();
 
             if(btnText == 'Next Round') {
                 $('#team1Score').prop('innerHTML', "Team 1: " + ++team1Score);
                 checkScores();
             }
-        });
+        };
 
-        $("#team2Btn").click(function(){
+        function team2BtnClick(){
             console.log("team2BtnClick")
-            var btnText = $('#theBtnToRuleThemAll').val();
+            var btnText = $('#theBtnToRuleThemAll').text();
 
             if(btnText == 'Next Round') {
                 $('#team2Score').prop('innerHTML', "Team 2: " + ++team2Score);
                 checkScores();
             }
-        });
+        };
 
         function endRound() {
             endRoundAudio.play();
             clearInterval(roundIntervalId);
             clearInterval(beepIntervalId);
 
-            $('#theBtnToRuleThemAll').val('Next Round');
+            $('#theBtnToRuleThemAll').text("Next Round");
         }
 
         function checkScores() {
@@ -234,7 +310,7 @@
 
             if(gameOver == true) {
                endGameAudio.play();
-                $('#theBtnToRuleThemAll').val('Start');
+                $('#theBtnToRuleThemAll').text("Start");
                 team1Score = 0;
                 team2Score = 0;
             }
