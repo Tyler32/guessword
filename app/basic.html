@@ -44,7 +44,7 @@
       <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 
 
-      <link rel="stylesheet" href="/guessword/app/styles/main.css">
+      <link rel="stylesheet" href="/styles/main.css">
 
       <style>
 
@@ -66,16 +66,10 @@
               height: 25%;
           }
 
-          #bottom{
+          #bottom {
               bottom: 0;
               overflow: auto;
               height: 50%;
-          }
-
-          .toprightcorner{
-              position:fixed;
-              top:10px;
-              right:10px;
           }
 
           .team-1-text{
@@ -118,7 +112,6 @@
     <!--
     <link rel="canonical" href="http://www.example.com/">
     -->
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 
   </head>
   <body>
@@ -150,8 +143,6 @@
         <form id="categoriesForm">
             <fieldset data-role="controlgroup">
                 <legend>Categories:</legend>
-                <input type="checkbox" name="checkbox-v-2a" id="checkbox-v-2a">
-                <label for="checkbox-v-2a">lotr</label>
                 <input type="checkbox" name="checkbox-v-2b" id="checkbox-v-2b">
                 <label for="checkbox-v-2b">DigiPen</label>
                 <input type="checkbox" name="checkbox-v-2c" id="checkbox-v-2c">
@@ -160,10 +151,57 @@
                 <label for="checkbox-v-2d">Characters</label>
                 <input type="checkbox" name="checkbox-v-2e" id="checkbox-v-2e">
                 <label for="checkbox-v-2e">College Sports</label>
-                <input type="checkbox" name="checkbox-v-2f" id="checkbox-v-2f">
+                <input type="checkbox" name="checkbox-v-2f" id="checkbox-v-2f" checked="true">
                 <label for="checkbox-v-2f">Final Fantasy</label>
                 <input type="checkbox" name="checkbox-v-2g" id="checkbox-v-2g">
                 <label for="checkbox-v-2g">LordOfTheRings</label>
+                <input type="checkbox" name="checkbox-v-1" id="checkbox-v-1">
+                <label for="checkbox-v-1">LOTR2</label>
+                <input type="checkbox" name="checkbox-v-2" id="checkbox-v-2">
+                <label for="checkbox-v-2">MoviesAndTV</label>
+                <input type="checkbox" name="checkbox-v-3" id="checkbox-v-3">
+                <label for="checkbox-v-3">Mythology</label>
+                <input type="checkbox" name="checkbox-v-4" id="checkbox-v-4">
+                <label for="checkbox-v-4">Naruto</label>
+                <input type="checkbox" name="checkbox-v-5" id="checkbox-v-5">
+                <label for="checkbox-v-5">Nintendo64</label>
+                <input type="checkbox" name="checkbox-v-6" id="checkbox-v-6">
+                <label for="checkbox-v-6">NintendoDS</label>
+                <input type="checkbox" name="checkbox-v-7" id="checkbox-v-7">
+                <label for="checkbox-v-7">NintendoEntertainmentSystem</label>
+                <input type="checkbox" name="checkbox-v-8" id="checkbox-v-8">
+                <label for="checkbox-v-8">NintendoGameCube</label>
+                <input type="checkbox" name="checkbox-v-9" id="checkbox-v-9">
+                <label for="checkbox-v-9">NintendoWii</label>
+                <input type="checkbox" name="checkbox-v-10" id="checkbox-v-10">
+                <label for="checkbox-v-10">North America Pro Sports</label>
+                <input type="checkbox" name="checkbox-v-11" id="checkbox-v-11">
+                <label for="checkbox-v-11">PC</label>
+                <input type="checkbox" name="checkbox-v-12" id="checkbox-v-12">
+                <label for="checkbox-v-12">Playstation</label>
+                <input type="checkbox" name="checkbox-v-13" id="checkbox-v-13">
+                <label for="checkbox-v-13">Playstation2</label>
+                <input type="checkbox" name="checkbox-v-14" id="checkbox-v-14">
+                <label for="checkbox-v-14">Playstation3</label>
+                <input type="checkbox" name="checkbox-v-15" id="checkbox-v-15">
+                <label for="checkbox-v-15">PlaystationPortable</label>
+                <input type="checkbox" name="checkbox-v-16" id="checkbox-v-16">
+                <label for="checkbox-v-16">Programming</label>
+                <input type="checkbox" name="checkbox-v-17" id="checkbox-v-17">
+                <label for="checkbox-v-17">Secret</label>
+                <input type="checkbox" name="checkbox-v-18" id="checkbox-v-18">
+                <label for="checkbox-v-18">SegaGenesis</label>
+                <input type="checkbox" name="checkbox-v-19" id="checkbox-v-19">
+                <label for="checkbox-v-19">SegaSaturn</label>
+                <input type="checkbox" name="checkbox-v-20" id="checkbox-v-20">
+                <label for="checkbox-v-20">StarWars</label>
+                <input type="checkbox" name="checkbox-v-21" id="checkbox-v-21">
+                <label for="checkbox-v-21">SuperNintendo</label>
+                <input type="checkbox" name="checkbox-v-22" id="checkbox-v-22">
+                <label for="checkbox-v-22">VideoGameStuff</label>
+                <input type="checkbox" name="checkbox-v-23" id="checkbox-v-23">
+                <label for="checkbox-v-23">XBox360</label>
+
             </fieldset>
         </form>
     </div>
@@ -181,9 +219,31 @@
 
         var guessWordsIndex = 0;
 
-        var beepAudio = new Audio("sounds/beep.mp3");
-        var endRoundAudio = new Audio("sounds/end.mp3");
-        var endGameAudio = new Audio("sounds/endgame.wav");
+        var endRoundAudio;
+        var endGameAudio;
+        var beepAudio;
+
+        var timeoutId = 0;
+
+        $(document).ready(function() {
+            console.log("ready!");
+
+            endRoundAudio = new Audio("/sounds/end.mp3");
+            endGameAudio = new Audio("/sounds/endgame.wav");
+            beepAudio = new Audio("/sounds/beep.wav");
+
+            $('#theBtnToRuleThemAll').on("taphold", tappyTap);
+
+        });
+
+        function tappyTap(){
+            var btnText = $('#theBtnToRuleThemAll').text();
+            console.log("btnText");
+            if(btnText == 'Next') {
+                endRound();
+                $('#theBtnToRuleThemAll').text("Cancelled");
+            }
+        }
 
         //loadWords(['/categories/lotr.txt', '/categories/DigiPen.txt']);
         //loadWords(['http://localhost:63342/guessword/app/categories/lotr.txt', 'http://localhost:63342/guessword/app/categories/HarryPotter.txt']);
@@ -200,10 +260,11 @@
         //});
 
         function loadWords() {
-            //var filePath = '/categories/';
+            var filePath = '/categories/';
             //var filePath = 'http://ternsts.com.s3-website-us-west-2.amazonaws.com/categories/';
-            var filePath = "http://localhost:63342/guessword/app/categories/";
+            //var filePath = "http://localhost:63342/guessword/app/categories/";
             var files = [];
+            guessWords = [];
 
             $('input[type=checkbox]').each(function () {
                 if (this.checked) {
@@ -240,11 +301,27 @@
             if(btnText == 'Next') {
                 $('#wordToGuessText').prop('innerHTML', guessWords[guessWordsIndex++ % guessWords.length]);
             }
+            else if(btnText == 'Cancelled') {
+                $('#theBtnToRuleThemAll').text("Next Round");
+            }
             else {
-                loadWords();
+                if(btnText == 'Start') {
+                    loadWords();
+
+                    if (guessWords.length == 0) {
+                        $('#wordToGuessText').prop('innerHTML', 'Select Category');
+                        return;
+                    }
+
+                    $('#team1Score').prop('innerHTML', "Team 1: 0");
+                    $('#team2Score').prop('innerHTML', "Team 2: 0");
+                }
 
                 //Round length 45-55 seconds
-                roundTime = 45000 + Math.random() * 10000;
+                roundTime = 45000 + Math.random() * 20000;
+                beepAudio.play();
+                endRoundAudio.volume = 0;
+                endRoundAudio.play();
                 beepIntervalId = setInterval(function() { beepAudio.play(); }, 1400);
                 midRoundIntervalId = setInterval(function() {
                     clearInterval(midRoundIntervalId);
@@ -270,30 +347,31 @@
 
         function team1BtnClick(){
             console.log("team1BtnClick")
-            var btnText = $('#theBtnToRuleThemAll').text();
 
-            if(btnText == 'Next Round') {
-                $('#team1Score').prop('innerHTML', "Team 1: " + ++team1Score);
-                checkScores();
-            }
+            $('#team1Score').prop('innerHTML', "Team 1: " + ++team1Score);
+            checkScores();
         };
 
         function team2BtnClick(){
             console.log("team2BtnClick")
-            var btnText = $('#theBtnToRuleThemAll').text();
 
-            if(btnText == 'Next Round') {
-                $('#team2Score').prop('innerHTML', "Team 2: " + ++team2Score);
-                checkScores();
-            }
+            $('#team2Score').prop('innerHTML', "Team 2: " + ++team2Score);
+            checkScores();
         };
 
         function endRound() {
+            endRoundAudio.volume = 1;
             endRoundAudio.play();
-            clearInterval(roundIntervalId);
-            clearInterval(beepIntervalId);
+            clearIntervals();
 
             $('#theBtnToRuleThemAll').text("Next Round");
+        }
+
+        function clearIntervals() {
+            clearInterval(roundIntervalId);
+            clearInterval(beepIntervalId);
+            clearInterval(midRoundIntervalId);
+            clearInterval(tenseIntervalId);
         }
 
         function checkScores() {
@@ -313,6 +391,7 @@
                 $('#theBtnToRuleThemAll').text("Start");
                 team1Score = 0;
                 team2Score = 0;
+                clearIntervals();
             }
         }
 
