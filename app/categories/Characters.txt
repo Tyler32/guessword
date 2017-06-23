@@ -1,18 +1,21 @@
 ﻿Abel
 Abobo
+Adam Hunter
 Adon
 Agent 47
 Air Man
 Akuma
 Aladdin
 Albert Simon
-Albert Wesker
+Alessa Gillespie
 Alex
 Alexandra Roivas
 Alice Elliot
+Alphonse Elric
 Altaïr Ibn La-Ahad
 Alucard
 Alys Brangwin 
+Amon
 Andre The Giant
 Andross
 Ansem the Wise
@@ -25,30 +28,32 @@ Armstrong
 Arthus Menethil
 Astaroth
 Axel
+Axel Stone
 Ayla
 B. Orchid
 Baal
 Bald Bull
 Balrog
-Balthios 
+Balthios
 Bam Bam Bigelow
 Banjo
-Barry Burton
 Barry The Chopper
 Bass
+Batman
 Baxter Stockman
 Bayman
 Beast
+Beastman
 Bebop
 Belthasar
-Berry Burton
+Big Ben
 Big Blarg
 Big Boss
 Billy Lee
 Birdo
 Birdy
 Blanka
-Blastoise
+Blaze Fielding
 Blizzard
 BloodRayne
 Bob-omb
@@ -57,51 +62,52 @@ Boomer
 Booster
 Bowser
 Bret Hart
+Brock Samson
 Bryan Fury
 Bubble Man
-Bulbasaur
 Bullet Bill
 Bulma
-Cammy
+Cammy White
+Candy Kong
 Captain Falcon
 Captain Grid-Iron
 Captain N
 Casey Jones
 Cassandra Alexandra
 Cervantes de Leon
-Charazard
 Charles Barkley
-Charlie
+Charlie Nash
 Charlotte Aulin
 Chaz Ashley 
+Cheetara
 Chip'n Dale
 Choutzu
-Chris Redfield
 Christie
 Chuck D Head
 Chun-Li
-Claire Redfield
 Clank
 Cobra Commander
 Cody
 Cole
 Colonel Mustang
 Colossus
+Conker
 Cortana
+Cranky Kong
 Crash Bandicoot
 Crash Man
 Crimson Viper
+Cringer
 Crono
 Cut Man
 Cyberdwarf
-Cyclops
 Cyrus
 Dalton
-Dan
+Dan Habiki
 Dante
 Dark Force
 Dark Queen
-Decoy Octopus
+David Xanatos 
 Dee Jay
 Demi
 Destro
@@ -109,29 +115,44 @@ Dhalsim
 Diddy Kong
 Din
 Dirk the Daring
+Dixie Kong
 Doc
 Dom
 Don Flamenco
 Donald Duck
 Donatello
+Donkey Kong
+Donkey Kong Junior
+Doom Guy
+Dr. Rusty Venture
 Dr. Fred Eddison
+Dr. Henry Killinger
 Dr. Light
 Dr. Mario
 Dr. Maximillian Roivas
+Dr. Mrs. the Monarch
+Dr. Teeth and the Electric Mayhem
 Dr. Wily
 Dracula
 Dudley
 Duke
 Duke Nukem
 Dyluck
+Eddie Dombrowski
+Edward Elric
 Eggplant Wizard
 E-Honda
 El Fuerte
 Elec Man
 Elena
+Elena Fisher
+Elisa Maza
+Ellie
 Elmo
 Epona
+Estelle Bright
 Etna
+Evil Lyn
 Falco Lombardi
 Farore
 Fei Long
@@ -141,9 +162,10 @@ Flash Man
 Foot Clan
 Forest Law
 Fox McCloud
+Fozzie Bear
 Friendly Snake
 Frog
-Gambit
+Funky Kong
 Ganon
 Ganondorf
 Geese Howard
@@ -154,37 +176,42 @@ General Pepper
 Geno
 Gepetto
 Ghost Dad
-Gildess
 Gildiss
 Gill
 Glass Joe
 Gohan
 Goken
 Goku
+Goliath
 Goofy
 Goomba
 Gordon Freeman
 Goro
 Grant Danasty
-Gray Fox
 Great Tiger
+Grimace
 Gryz
 Guile
 Guts Man
 Guy
 Guybrush Threepwood
-Hahn Mahlay 
+Hahn
 Hakan
+Halo Guy
 Hamato Yoshi
+Hamburglar
 Hammer-Bot
+Hank and Dean Venture
 Hard Man
-Hawkeye
 Head Crab
 Heartless
 Heat Man
+Heather Mason
 Heihachi Mishima
 Helena
+He-Man
 Hilde
+Hildegard Valentine 
 Hoopz Barkley
 Hugo
 Hulk Hogan
@@ -195,16 +222,14 @@ Ice Man
 Illidan Stormrage
 Iori
 Ivy Valentine
-Jake Muller
-Jean Grey
+James Sunderland
 Jessica
-Jigglypuff
-Jill Valentine
 Jimmy Lee
 Joachim Valentine
+Joel
 Johnny Cage
 Jonathan Morris
-Juggernaut
+Joshua Bright
 Jun
 Kain
 Kairi
@@ -213,7 +238,9 @@ Kameo
 Karin Koenig
 Karnov
 Kasumi
+Kazuya Mishima
 Ken Masters
+Kermit the Frog
 Kilik
 King
 King Dedede
@@ -221,7 +248,7 @@ King Hippo
 King Koopa
 Kintaro
 Kirby
-Knuckles
+Knuckles the Echidna
 Koopa Troopa
 Kraid
 Krang
@@ -232,11 +259,11 @@ Kuma
 Kung Lao
 Kyle
 Kyo
-Kyra Tierney 
+Kyra
 Laharl
 Lara Croft
-Larrry Bird
-Larry
+Larry Bird
+Larry Koopa
 Lavos
 Leatherhead
 LeBron James
@@ -244,10 +271,10 @@ Lee Travino
 Lei Fang
 Lei Wulong 
 Lemmy Koopa
-Leon S Kennedy
 Leonardo
 Lili Rockfort
 Link
+Lion-O
 Liquid Snake
 Little Mac
 Lizardman
@@ -258,19 +285,20 @@ Ludwig Von Koopa
 Luigi
 Luna
 M. Bison
+Macho Man Randy Savage
 Magic Emperor Ghaleon
-Magik
 Magnet Man
-Magneto
-Magneton
 Magus
 Mai
 Makoto
 Maleficent
+Malkovich
 Mallow
+Man at Arms
 Manny Calavera
 Mappy
 Marcus Fenix
+Margaret
 Maria Renard
 Mario
 Marle
@@ -282,10 +310,10 @@ Master Barf
 Master Chief
 Max Payne
 Maxi
+Mayor McCheese
 Meat Boy
 Mega Man
 Melchoir
-Meryl Silverburgh
 Meta Knight
 Metal Man
 Mewtwo
@@ -300,13 +328,14 @@ Mitsurugi
 Moblin
 Morrigan
 Mother Brain
-Mr Popo
-Mr Sandman
 Mr. Big
 Mr. Dream
 Mr. Game & Watch
-Ms Marvel
+Mr. Popo
+Mr. Sandman
+Mr. X
 Ms. Pac-Man
+Ms. Piggy
 Mufasa
 Mumbo Jumbo
 Mune
@@ -324,7 +353,9 @@ Nobody
 Octorok
 Olcadan
 Olimar
+Olivier
 Organization XIII
+Orko
 Oro
 Pac-Man
 PaRappa
@@ -333,15 +364,12 @@ Paul Phoenix
 Peppy
 Pete
 Piccolo
-Pichu
-Pikachu
 Pikmin
 Pimple
 Pious Augustus
 Piston Honda
 Pit
 Pitfall Harry
-Pokémon Trainer
 Prince Hordkin
 Princess Daisy
 Princess Peach
@@ -349,27 +377,27 @@ Princess Toadstool
 Princess Zelda
 Proto Man
 Prototype Jack
-Psycho Mantis
-Psyduck
 Pyramid Head
 Q
 Q-bert
 Quick Man
-Raichu
 Raiden
-Ralphael
+Rainbow Mika
 Raphael
 Rash
+Rasputin
 Rat King
 Ratchet
 Rayman
 Raziel
 Remi
-Revolver Ocelot
 Richter Belmont
 Ridley
 Rika
 Riku
+Risky Boots
+Rita Repulsa
+Riza Hawkeye
 Robert Garcia
 Robo
 Robo Manus
@@ -377,20 +405,19 @@ Robotnik
 Rock
 Rock 'n Roll
 Rocksteady
+Roger Bacon
 Roger Wilco
-Rogue
 Rolento
 Roll
+Ronald McDonald
 Rose
 Roxas
 Rufio
-Rufus
 Rugal Bernstein
-Rune Walsh 
+Rune Walsh
 Rush
 Ryu
 Ryu Hayabusa
-Sabertooth
 Sack Boy
 Sagat
 Sakura
@@ -398,9 +425,11 @@ Sam Fisher
 Samus Aran
 Sandman
 Schala
+Scherazard
 Scorpion
 Scrooge McDuck
 Sean
+Segata Sanshiro
 Seong Mina
 Serge
 Seth
@@ -409,51 +438,53 @@ Shadow Link
 Shadow Man
 Shadow the Hedgehog
 Shadow Warrior
-Shagohod
 Shang Tsung
 Shanoa
-Sherry Birkin
-Sheva Alomar
+Shantae
+She-Ra
 Shiek
+Shovel Knight
 Shredder
 Shyguy
 Siegfried
 Silky
 Simba
 Simon Belmont
+Skeletor
 Slippy
 Smoker
 Snake Eyes
 Snake Man
-Sniper Wolf
+Snarf
 Soda Popinski
-Solid Snake
 Soma Cruz
-Sonic
+Somnion
+Sonic the Hedgehog
 Sophitia Alexandra
 Sora
 Spark Man
 Spearface
-Spider-Man
 Splinter
-Squirtle
-Stalfos
+Spyro
 Stalfos
 Star Wolf
 Stitch
 Stromboli
 Sub-Zero
 Super Macho Man
+Super Man
+Swedish Chef
 Sweet Tooth
 Sypha Belnades
 T. Hawk
 Taki
 Talim
 Tengu Man
-Terra
 Terry Bogard
 The Arbiter
+The Great Mighty Poo
 The Horned Reaper
+The Mighty Monarch
 The Million Dollar Man Ted DiBiase
 The Rock
 Tien Shinhan
@@ -468,30 +499,30 @@ Twelve
 Ultimate Hellbane
 Undertaker
 Urien
-Vamp
 Vault Boy
 Vega
 Vegeta
 Ventus
+Victor Sullivan 
 Viewtiful Joe
 Vinceborg
 Voldo
 Von Kaiser
-Vulcan Raven
+Walter Sullivan
 Waluigi
 Wapeach
 Wario
 Wart
-Weezing
 Wilford Brimley
 Winnie-the-Pooh
-Wolverine
+Winry Rockbell
 Wood Man
 Wren
 Xehanort
 Xianghua
 Yamato Man
 Yamcha
+Yellow Devil
 Yoshimitsu
 Yun-Seong
 Yuri Hyuga

@@ -23,6 +23,7 @@ Apollo 13
 Are you the Gatekeeper?
 Arnold Schwarzenegger
 Arrested Development
+Art Mullen
 Austin Powers
 Avatar
 Axel Foley
@@ -44,6 +45,7 @@ Blade Runner
 Bob Hoskins
 Bombotta, Get Out!
 Bonnie & Clyde
+Boyd Crowder
 Breaking Bad
 Brokeback Mountain
 Bryan Cranston
@@ -112,6 +114,7 @@ Friday Night Lights
 Frodo Baggins
 Frozen
 Game of Throwns
+Gargoyles
 Gene Wilder
 Get to the Chopper!
 Get your ass to Mars.
@@ -143,6 +146,7 @@ Hot Fuzz
 House, M.D.
 Houston, we have a problem.
 How I Met Your Mother
+Human Target
 I ain't got time to bleed.
 I love the smell of napalm in the morning.
 I see dead people.
@@ -264,6 +268,7 @@ Pulp Fiction
 Quentin Tarantino
 Raging Bull
 Rambo: First Blood
+Raylan Givens
 Rear Window
 Reese Witherspoon
 Requiem for a Dream
@@ -375,6 +380,7 @@ There's no crying in baseball!
 There's no place like home.
 They call me Mister Tibbs!
 Tim Curry
+Time Cop
 Timothy Olyphant
 Titanic
 To Kill a Mockingbird

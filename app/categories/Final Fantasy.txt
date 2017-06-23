@@ -1,72 +1,161 @@
+1000 Needles
+1000 Words
+7th Heaven
 Adamant Armor
+Adamantoise
+Adelbert Steiner
 Aegis  Shield
 Aeon
 Aeris Gainsborough
+Agrias Oaks
+Ahriman
 Airship
 Al Bhed 
 Alexander
+Alexandria
 Amarant Coral 
+Angel Wing
 Angelo
+Angelo Cannon
 Anima
+Aqua Breath
+Arc
+Army of One
 Ashe
+Atma Weapon
 Atomos
+Attack Reels
+Aurochs Reels
 Auron
+Auto Crossbow
+AVALANCHE
 Bad Breath
 Bahamut
+Bahamut Sin
+Bahamut Zero
+Balamb Garden
 Balthier
-Bannon
+Banishing Blade
+Banon
+Barret Wallace
 Barthandelus
-Basch
+Bartz Klauser
+Basch fon Ronsenburg
+Beat Rush
 Beatrix
-Berret Wallace
+Behemoth
+Besaid Island
+Big Brawl
+Big Shot
+Biggs and Wedge
+Bio Blaster
+Biran and Yenke
 Bismark
 Black Mage
+Black Materia
+Black Waltz
 Blackjack
+Blasting Zone
 Blitz
+Blitz Ace
 Blitzball
 Blue Mage
+Boco
+Bomb
+Braska's Final Aeon
+Brotherhood
 Bum Rush
+Burmecia
+Buster Sword
 Cactuar
 Cait Sith
 Carbuncle
 Cat Scratch
-Cecil
+Cecil Harvey
 Celes Chere
+Ceodore Harvey
+Chamber of the Fayth
+Chaos
 Chappu
 Chocobo
-Cid
+Chocobo Chick
+Chocobo Eater
 Cid Highwind
+Cid Pollendina
+Claire Farron
+Clash on the Big Bridge
+Clear Tranquil
+Climhazzard
+Cloud of Darkness
 Cloud Strife
+Clyde
 Cocoon
+Coeurl
+Cold Blood
+Cosmo Canyon
 Crystarium
 Cura
+Curaja
 Cyan Garamonde
 Dagger
+Dalmasca
+Damcyan
 Dance
+Dancing Mad
+Darill
 Dark Knight
+Death
+Death Gigas
+Demon Wall
+Desperado
+Diamond Weapon
+Dice
 Dissidia
 Djose Temple
+Dolphin Blow
 Doma Castle
+Doom
 Doom Gaze
+Doom Train
+Double Cast
+Dragon Fang
 Dragoon
+Dressphere
+Drill
 Edgar And Mash
 Edgar Roni Figaro
-Edge
+Edge Geraldine
 Edward
+Eidolon
 Eiko
+Elixir
+Emerald Weapon
 Emperor Gestahl
 Esper
+Etro
+Excalibur
+Excalipoor
 Exdeath
 Fabul
 Fal'Cie
+Famed Mimic Gogo
 Fang
+Faris Scherwiz
 Fat Chocobo
+Feral Chaos
 Fighter
+Final Heaven
 Firaga
+Fire Dance
+Firion 
+Flan
 Fran
-Freya
+Freya Crescent
+Frog Drop
+Full Break
 FuSoYa
 Gabranth
+Galuf
 Garland
 Garnet Til Alexandros
 Gau
@@ -75,140 +164,272 @@ Genji Equipment
 Ghost Train
 Giant of Babil
 Gilgamesh
-Gogo
 Golbez
 Gold Hairpin
+Golden Saucer
+Good King Moggle Mog XII
+Gordon 
 Gran Pulse
-Hope
+GrandTrain
+Griever
+Guard
+Guardian
+Guardian Corps
+Gullwings
+Gunblade
+Guy 
+Healing Wind
+Hellmasker
+High Summoner Braska
+Hilda Garde III
+Hope Estheim
 Hornless
+Howling Moon
+I Want To Be Your Canary
 Ifrit
+Imp
+Indomitable Blade
+Ingus
 Interceptor
+Invincible Moon
 Iron Giant
 Irvine Kinneas
+Ivalice
 Ixion
 Jecht
 Jecht Shot Mark 2
 Jenova
-Kain
+Jihl Nabaat
+Josef 
+Julia Heartilly
+Jump
+Kain Highwind
 Kainazzo 
 Kefka Palazzo
-Kimario Ronso
+Kimahri Ronso
+Knights of Pluto 
+Krile
 Kuja
 Kupo
 Lagomorph
 Laguna Loire
+Laser Eye
+Leila 
+Lenna Charlotte Tycoon
+Leon 
 Leviathan
 Lich
+Life 3
+Lifestream
 Lightning
 Lightning Returns: Final Fantasy 13
 Limit Break
+Limited Moon
+Lion Heart
 Locke Cole
 Lore
 Lulu
 Lunar Whale
+Lunatic High
+Luneth
+Mach Kick
 Maduin
 Magicite
 Magitek
 Malboro
+Maria 
+Masamune
 Materia
+Matoya's Cave
 Meteo
+Meteor
+Mighty Guard
+Minwu 
 Mog
 Monk
 Moogle
 Moogle Charm
+Moogle Rush
+Moomba
 Morph
+Mt. Gagazet
 Namingway 
+Nanaki
 Narshe
+Ninja Magic
+NORA
+Nova
+Ochu
+Oerba
+Omega Weapon
+Omnislash
+One Winged Angel
+Onion Kids
 Opera House
 Overdrive
 Paine
 Paladin
 Palidor
 Palom
+Palumpolum
 Paradigm Shift
 Penelo
 Phoenix Down
 Pink Puff
 Pink Tail
 Porom
+Prelude
+Professor Hojo
+Pulse of Life
 Pummle
 Punbaba
-Quina
+Pupu
+Queen Brahne
+Quick Shot
+Quina Quen
 Quistis Trepe
 Rage
+Ragnarok
 Ramuh
+Ramza
+Rat Tail
 Ravager
+Record Keeper
 Red Mage
 Red Wings
 Red XIII
+Refia 
+Reflect
 Relm Arrowny
+Reno
 Ribbon
+Ricard Highwind
 Ride Ze Shoopuf?
 Rikku
 Rinoa Heartilly
-Rosa
+Riot Blade
+Roaming Warrior
+Rosa Joanna Farrell
 Rubicante
+Ruby Weapon
+Rufus
 Runic
 Rydia
 Sabin Rene Figaro
-Sazh
+Satellite Beam
+Save the Queen
+Sazh Katzroy
 Scarmiglione
+SeeD
 Seifer Almasy
+Self-Destruct
 Selphie Tilmitt
 Sephiroth
+Serah Farron
+Seto
 Setzer Gabbiani
 Seymour Guado
 Shadow
+Shinryu
 Shiva
 Shoat
+Shock 
+Shoopuf
+Sin
 Sketch
-Snow
+Slice & Dice
+Slots
+Snow Villiers
+Songstress
 Sorceress Edea
+Sorceress Ultimecia
 South Figaro
+Sovereign Fist
+Spell Blade
 Sphere Grid
+Spinning Edge
 Spira
+Spiral Cut
 Sprint Shoes
 Squall Leonhart
-Steiner
+Step Mine
 Strago Magus
 Summoner
+Summoner's Pilgrimage
+Suplex
+Sword of Kings
 Swordtech
 Tellah
 Terra Branford
+The Calm Lands
+The End
+The Eternal Calm
+The Hanging Edge
+The Magus Sisters
+The Man With the Machine Gun
+The Nibelheim Incident
 The Returners
+The Sending
 The Turks
+The Void
 Theif
+Thunder God Cid Orlandeau
+Thunder Plains
 Tiamat
 Tidus
 Tifa Lockhart
+Tiger Break
 Time Mage
+Tiny Bee
 Tonberry
+Trance
+Triple Triad
 Tritoch
 Ultima
 Ultima Weapon
 Ultros
 Umaro
+Unsent
 Vaan
 Valefor
 Valvalis
 Vanille
 Vanish
 Veldt
+Vidina
+Village of Mist
 Vincent Valentine
 Vivi
 Wakka
+Wall
 War of the Magi
+War of Transgression
 Wark
+Warrior
 White Mage
+White Materia
+White Wind
+Wiegraf
+Wishing Star
 World of Balance
 World of Ruin
+Wutai
 X-Zone
 Yang
+Yevon
 Yojimbo
 You Spoony Bard!
 Yuffie Kisaragi
 Yuna
 Zack Fair
+Zanarkand
+Zanarkand Abes
+Zantetsuken
+Zantetsuken Reverse
 Zell Dincht
 Zeromus
-Zidane
+Zidane Tribal
+Zone Eater
+Zorn and Thorn
+Zozo
+Zu

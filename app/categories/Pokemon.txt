@@ -1,0 +1,275 @@
+Bulbasaur  
+Ivysaur
+Venusaur
+Charmander
+Charmeleon
+Charizard
+Squirtle
+Wartortle
+Blastoise 
+Caterpie
+Metapod
+Butterfree
+Weedle
+Kakuna
+Beedrill
+Pidgey
+Pidgeotto
+Pidgeot
+Rattata
+Raticate
+Spearow
+Fearow
+Ekans
+Arbok
+Pikachu
+Raichu
+Sandshrew
+Sandslash
+Nidoran (Female)
+Nidorina 
+Nidoqueen
+Nidoran (Male)
+Nidorino
+Nidoking
+Clefairy
+Clefable
+Vulpix
+Ninetales
+Jigglypuff
+Wigglytuff
+Zubat
+Golbat
+Oddish
+Gloom
+Vileplume
+Paras
+Parasect
+Venonat
+Venomoth
+Diglett
+Dugtrio
+Meowth
+Persian
+Psyduck
+Brian
+Golduck
+Mankey
+Primeape
+Growlithe
+Arcanine
+Poliwag
+Poliwhirl
+Poliwrath
+Abra
+Kadabra
+Alakazam
+Machop
+Machoke
+Machamp
+Bellsprout
+Weepinbell
+Victreebel
+Tentacool
+Tentacruel
+Geodude
+Graveler
+Golem
+Ponyta
+Rapidash
+Slowpoke
+Slowbro
+Magnemite
+Magneton
+Farfetch'd
+Doduo
+Dodrio
+Seel
+Dewgong
+Grimer
+Muk
+Shellder
+Cloyster
+Gastly
+Haunter
+Gengar
+Onix
+Drowzee
+Hypno
+Krabby
+Kingler
+Voltorb
+Electrode
+Exeggcute
+Exeggutor
+Cubone
+Marowak
+Hitmonlee
+Hitmonchan
+Lickitung
+Koffing
+Weezing
+Rhyhorn
+Rhydon
+Chansey
+Tangela
+Kangaskhan
+Horsea
+Seadra
+Goldeen
+Seaking
+Staryu
+Starmie
+Mr. Mime
+Scyther
+Jynx
+Electabuzz
+MagmarPinsir
+Tauros
+Magikarp
+Gyarados
+Lapras
+Ditto
+Eevee
+Vaporeon
+Jolteon
+Flareon
+Porygon
+Kabuto
+Kabutops
+Aerodactyl
+Snorlax
+Articuno
+Zapdos
+Moltres
+Dratini
+Dragonair
+Dragonite
+Mewtwo
+Mew
+Soul Silver
+Heart Gold
+Alpha Sapphire
+Omega Ruby
+Red
+Blue
+Pokémon Trainer
+Poké Center
+Shiney
+Poké Ball
+Master Ball
+Full Restore
+Max Repel
+Team Rocket
+Team Plasma
+Team Galactic
+Team Skull
+Team Valor
+Team Instinct
+Team Mystic
+Kanto
+Pallet Town
+Cinnabar Island
+Johto
+Goldenrod City
+Safari Zone Gate
+Hoenn
+Ever Grande City
+Sinnoh
+Unova
+Kalos 
+Professor Oak
+Professor Elm
+Professor Birch
+Professor Juniper
+Red Gyarados
+Candela
+Spark
+Blanche
+The Elite Four
+Dawn
+Gym Leader
+Giovanni
+Sunyshore City
+Brock
+Misty
+Lt. Surge
+Erika
+Koga
+Janine
+Sabrina
+Blane
+Clair
+Crasher Wake
+Volkner
+Gym Badge
+Lorelei
+Bruno
+Agatha
+Lance
+Cut
+Fly
+Waterfall
+Strength
+Rock Smash
+Thunderbolt
+Splash
+Tackle
+Surf
+Defog
+Rock Climb
+X-Scissor
+Water Gun
+U-turn
+Swords Dance
+Sunny Day
+Solar Beam
+Stealth Rock
+Sludge Bomb
+Skull Bash
+Shadow Ball
+Self-Destruct
+Rock Polish
+Roost
+Sandstorm
+Rest
+Psychic
+Poison Jab
+Iron Tail
+Horn Drill
+Giga Drain
+Flash
+Flamethrower
+Dream Eater
+Endure
+Earthquake
+Dragon Rage
+Dig
+BubbleBeam
+False Swipe
+Leech Seed
+Growl
+Game Freak
+New Bark Town
+Super Potion
+Pokédex
+Route 1
+Victory Road
+It's super effective
+Fast Ball
+Leftovers
+EXP Share
+Lucky Egg
+Rare Candy
+TM01
+Rocky Helmet
+Life Orb
+Sitrus Berry
+Quick Claw
+PP Up
+Poke Flute
+Nugget
+Macho Brace
+Ultra Ball
+Shell Bell
+Everstone
