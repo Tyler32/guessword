@@ -15,6 +15,7 @@ Alphonse Elric
 Altaïr Ibn La-Ahad
 Alucard
 Alys Brangwin 
+Alyssa L'Salle
 Amon
 Andre The Giant
 Andross
@@ -55,6 +56,7 @@ Birdy
 Blanka
 Blaze Fielding
 Blizzard
+BLOODMOSES
 BloodRayne
 Bob-omb
 Bomb Man
@@ -124,13 +126,13 @@ Donatello
 Donkey Kong
 Donkey Kong Junior
 Doom Guy
-Dr. Rusty Venture
 Dr. Fred Eddison
 Dr. Henry Killinger
 Dr. Light
 Dr. Mario
 Dr. Maximillian Roivas
 Dr. Mrs. the Monarch
+Dr. Rusty Venture
 Dr. Teeth and the Electric Mayhem
 Dr. Wily
 Dracula
@@ -231,6 +233,8 @@ Johnny Cage
 Jonathan Morris
 Joshua Bright
 Jun
+Juwanna Mann
+Juwanna Mann
 Kain
 Kairi
 Kame
